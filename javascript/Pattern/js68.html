@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+<script>
+    var n = prompt("enter a number") * 1 + 64;
+    for (let i = 65; i <= n; i++) {
+        for (let j = n; j > i; j--) {
+            document.write(" ");
+        }
+        for (let j = 65; j <= i; j++) {
+            if (i == j || i == n || j == 65) {
+                document.write(String.fromCharCode(j));
+            } else {
+                document.write("_");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>
+</body>
+
+</html>

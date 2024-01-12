@@ -1,0 +1,493 @@
+* {
+    font-family: sans-serif;
+    /* padding: 0;
+  margin: 0; */
+}
+
+.m {
+    /* border: 1px solid black; */
+    /* width: 800px; */
+    /* width: auto; */
+    /* height: auto; */
+    box-sizing: border-box;
+}
+
+.c1 {
+    /* border: 1px solid rgb(255, 0, 0); */
+    box-sizing: border-box;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url("anna-rosar-ZxFyVBHMK-c-unsplash.jpg"); */
+    background-image: url("back.jpg");
+    height: 476px;
+}
+
+.c1i {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.c1i1 {
+    /* background-image: url("svg (2).png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30%;
+    font-size: 10px;
+}
+
+.c1i2 {
+    /* background-image: url("i1.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: 0%; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 23%;
+    margin-top: 27%;
+    /* border: 1px solid black; */
+    /* box-shadow: 0px 200px 1000px #4f536b; */
+
+}
+
+.c1t {
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+    height: 60px;
+    width: 100%;
+}
+
+.tl {
+    margin-top: 11px;
+    margin-left: 40px;
+    background-image: url("logo.png");
+    filter: invert(10%) sepia(1%) saturate(100%) hue-rotate(1deg) brightness(1000%)contrast(800%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.tl1 {
+    margin-top: 50px;
+    /* margin-left: 40px; */
+    background-image: url("logo.png");
+    /* filter: invert(10%) sepia(1%) saturate(100%) hue-rotate(1deg) brightness(1000%)contrast(800%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+.tc {
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-sizing: border-box;
+    height: 100%;
+    width: 153px;
+    float: left;
+}
+
+.tr {
+    /* border: 1px solid rgb(255, 0, 0); */
+    box-sizing: border-box;
+    height: 100%;
+    width: 70%;
+    padding-left: 20px;
+    padding-top: 6px;
+    float: left;
+}
+
+.span1 {
+    margin: 15px;
+    margin: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    float: left;
+}
+
+.tr1 {
+    font-weight: 700;
+    margin: 6px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 12px;
+    float: left;
+    border: 1px solid #e3b877;
+    border-radius: 40px;
+    color: #e6b772;
+    width: 100px;
+    height: 20px;
+}
+
+.c1l {
+    width: 230px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 40px;
+    float: left;
+}
+
+.c1r {
+    width: 300px;
+    height: 180px;
+    margin-top: 100px;
+    margin-left: 180px;
+    border-radius: 10px;
+    float: left;
+}
+
+.s3 {
+    background-color: #e3b877;
+    box-sizing: border-box;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    height: 25px;
+    width: 70px;
+    float: left;
+    margin-top: -3px;
+}
+
+.c2 {
+    /* border: 1px solid green; */
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.c2t {
+    /* border: 1px solid rgb(45, 7, 233); */
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.c2l {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(0, 0, 0); */
+    height: 83.2%;
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.c2r {
+    box-sizing: border-box;
+    /* border: 1px solid rgb(255, 0, 0); */
+    height: 83.2%;
+    width: 50%;
+    float: left;
+}
+
+.c2rl {
+    background-image: url("portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg");
+    background-size: cover;
+    background-position: 50%;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(255, 0, 0); */
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 60%;
+    width: 45%;
+    float: left;
+    border-radius: 12px;
+}
+
+.c2rr {
+    background-image: url("successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg");
+    background-size: cover;
+    background-position: 50%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-right: 10px;
+    /* border: 1px solid rgb(255, 0, 0); */
+    height: 60%;
+    width: 45%;
+    float: right;
+    border-radius: 12px;
+}
+
+.c2rb {
+    /* border: 1px solid rgb(0, 0, 0); */
+    margin-top: 45%;
+    margin-left: 5%;
+    height: 12%;
+    width: 90%;
+}
+
+.c3 {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 400px;
+    background-image: url("frederik-rosar-NDSZcCfnsbY-unsplash.jpg");
+    background-size: cover;
+    background-position: 0%;
+    box-sizing: border-box;
+}
+
+.c3t {
+    background-image: url("svg (4).png");
+    background-size: cover;
+    background-position: 0%;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(255, 255, 255); */
+    width: 100%;
+    height: 25%;
+}
+
+.c3c {
+    box-sizing: border-box;
+    /* border: 1px solid rgb(0, 0, 0); */
+    background-color: rgba(255, 255, 255, .8);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* opacity: 70%; */
+    width: 42%;
+    height: 43%;
+    margin-top: 0%;
+    margin-left: 5%;
+    border-radius: 12px;
+}
+
+.c3b {
+    background-image: url("svg (5).png");
+    background-size: cover;
+    background-position: 1%;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(255, 0, 0); */
+    width: 100%;
+    height: 32%;
+    margin-top: 0%;
+}
+
+.c3cd {
+    box-sizing: border-box;
+    /* border: 1px solid rgb(0, 0, 0); */
+    background-color: #ffffff;
+    width: 100%;
+    height: 24%;
+    border-radius: 50px;
+    margin-top: 7%;
+}
+
+.c4 {
+    /* border: 1px solid rgb(255, 0, 0); */
+    height: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.c4t {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    height: 8%;
+    width: 100%;
+    text-align: center;
+}
+
+.c4l {
+    box-sizing: border-box;
+    /* border: 1px solid rgb(3, 13, 202); */
+    height: 92%;
+    width: 55%;
+    float: left;
+}
+
+.c4r {
+    box-sizing: border-box;
+    /* border: 1px solid rgb(3, 13, 202); */
+    height: 92%;
+    width: 45%;
+    float: left;
+}
+
+.c4l1 {
+    box-sizing: border-box;
+    /* border: 1px solid rgb(0, 0, 0); */
+    background-color: #3b3f5a;
+    margin-left: 20px;
+    height: 80%;
+    width: 90%;
+    float: left;
+    border-radius: 13px;
+}
+
+.c4r1 {
+    box-sizing: border-box;
+
+    /* border: 1px solid rgb(0, 0, 0); */
+    background-color: cornflowerblue;
+    margin-left: 20px;
+    height: 80%;
+    width: 90%;
+    float: left;
+    border-radius: 13px;
+    padding: 15px;
+    padding-top: 5px;
+}
+
+.c4d1 {
+    box-sizing: border-box;
+    /* border: 1px solid rgb(255, 0, 0); */
+    border-radius: 13px 13px 0px 0px;
+    height: 16%;
+    width: 100%;
+    padding-top: 14px;
+}
+
+.c4d2 {
+    padding-top: 5px;
+    padding-left: 11px;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(255, 255, 255); */
+    background-color: #ffffff;
+    height: 14%;
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+}
+
+.c4d3 {
+    padding-left: 11px;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(255, 255, 255); */
+    background-color: #f4f1de;
+    height: 14%;
+    width: 100%;
+}
+
+.c5 {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 450px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f4f1de;
+
+}
+
+.c5t {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 170px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #f4f1de;
+
+}
+
+.c5b {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 170px;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+}
+
+.c5t1 {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 100px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    float: left;
+    background-color: #81b397;
+    text-align: center;
+}
+
+.c5t2 {
+    /* border: 1px solid black; */
+    width: 200px;
+    box-sizing: border-box;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    float: left;
+
+}
+
+.c5t3 {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 400px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* border-radius: 15px; */
+    float: left;
+    padding: 8px;
+
+}
+
+.c5b1 {
+    /* border: 1px solid black; */
+    text-align: center;
+    width: 100px;
+    height: 80px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: #81b397;
+    float: left;
+}
+
+.c5b2 {
+    /* border: 1px solid black; */
+    width: 200px;
+    box-sizing: border-box;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    float: left;
+
+}
+
+.c5b3 {
+    /* border: 1px solid black; */
+    width: 400px;
+    height: 150px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* border-radius: 15px; */
+    float: left;
+    padding: 8px;
+
+
+}
+
+.c5b2 {
+    background-image: url("girl-taking-selfie-with-friends-golf-field.jpg");
+    background-size: cover;
+}
+
+.c5t2 {
+    background-image: url("professional-golf-player.jpg");
+    background-size: cover;
+}

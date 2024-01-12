@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <div>
+ <input type="number" id="no1">
+ <select name="raj"  id="o">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">x</option>
+    <option value="/">/</option>
+ </select>
+ <input type="number" id="no2"><br>
+
+ <button onclick="raj()" id="raj">=</button>
+ <input type="text" id="l">
+ 
+</div>
+</body>
+<script>
+function raj(){
+    var a=document.getElementById('no1').value;
+    var b=document.getElementById('o').value;
+    var c=document.getElementById('no2').value;
+    if(b=='+'){
+        var y=parseInt(a)+parseInt(c);
+    }
+    if(b=='-'){
+        var y=parseInt(a)-parseInt(c);
+    }
+    if(b=='*'){
+        var y=parseInt(a)*parseInt(c);
+    }
+    if(b=='/'){
+        var y=parseInt(a)/parseInt(c);
+    }
+    if(b=='%'){
+        var y=parseInt(a)%parseInt(c);
+    }
+    document.getElementById('l').value=y;
+}
+</script>
+</html>

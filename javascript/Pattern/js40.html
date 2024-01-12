@@ -1,0 +1,24 @@
+<!-- 
+ABCDE
+A  D
+A C
+AB
+A
+-->
+<pre>
+<script>
+        var i,j,n=5;
+        var a;
+        for(i=n;i>=1;i--){
+             a=65;
+            for(j=1;j<=i;j++){
+                if(i==j||i==5||j==1)
+                document.write(String.fromCharCode(a));
+            else
+            document.write("&nbsp;");
+            a++;
+            }
+            document.write("<br>");
+        }
+    </script>    
+    </pre>

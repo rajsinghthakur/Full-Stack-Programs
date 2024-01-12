@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .neon-cursor {
+            background: url("image/pumpkin.jpg") no-repeat 0%;
+            background-size: cover;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px 20px orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="neon-cursor"></div>
+    <script>
+        const cursor = document.querySelector(".neon-cursor");
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.pageX}px`;
+            cursor.style.top = `${e.pageY}px`;
+        });
+    </script>
+</body>
+
+</html>

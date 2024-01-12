@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+
+
+        }
+
+        .d1 {
+            height: 50px;
+            width: 300px;
+            border: 1px solid red;
+            animation-name: demo;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-direction: reverse;
+            transition: linear;
+        }
+
+        .d2 {
+            background-color: #ff0000;
+            height: 50px;
+            width: 50px;
+            border: 1px solid red;
+            border-radius: 50px;
+        }
+
+
+        @keyframes demo {
+            0% {
+                rotate: 0deg;
+            }
+
+            /* 25% {
+                rotate: 90deg;
+            }
+
+            50% {
+                rotate: 180deg;
+            }
+
+            75% {
+                rotate: 270deg;
+            } */
+
+            100% {
+                rotate: 5000000000000000deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <div class="d2"></div>
+    </div>
+</body>
+
+</html>

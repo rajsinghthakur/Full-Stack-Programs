@@ -1,0 +1,25 @@
+<!-- 
+      A
+     A B
+    A B C
+   A B C D
+  A B C D E 
+
+ -->
+<pre>
+<script>
+    var i, j;
+    var n = 5,a;
+    for (i = 1; i <= n; i++) {
+        a=65;
+        for (sp = n - i; sp >= 1; sp--) {
+            document.write(" ");
+        }
+        for (j = 1; j <= i; j++) {
+            document.write(" " +String.fromCharCode (a));
+            a++;
+        }
+        document.write("<br>");
+    }
+</script>    
+</pre>

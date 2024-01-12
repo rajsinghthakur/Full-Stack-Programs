@@ -1,0 +1,1 @@
+node js c++ ka code he jo ki liya gaya he chrome browser ke v8 engine ke code se aur c++ code jisko liya gaya usey wrap kar diya gaya js code se and ye hume allow karta hai ke hum js code likhein aur ye js code accept karega and c++ ke basis par aapko ek server environment bana kar dega, par sirf tab tak jab tak ye code chalaayega.

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Move an element to left, right,
+        up and down using arrow keys
+    </title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+    </script>
+    <style type="text/css">
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            display: grid;
+            place-items: center;
+        }
+
+        .main {
+            border: 1px solid black;
+            height: 700px;
+            width: 700px;
+            position: relative;
+        }
+
+        .box {
+            background: green;
+            width: 10%;
+            height: 10%;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="main">
+            <div class="box"></div>
+        </div>
+        <script type="text/javascript">
+            $(document).keydown(function (e) {
+                if (e.which == '40') { //down arrow key 
+                    $(".box").finish().animate({
+                        top: "+=10"
+                    });
+                } else if (e.which == '38') { //up arrow key 
+                    $(".box").finish().animate({
+                        top: "-=10"
+                    });
+                } else if (e.which == '39') { //left arrow key 
+                    $(".box").finish().animate({
+                        left: "+=10"
+                    });
+                } else if (e.which == '37') { //right arrow key 
+                    $(".box").finish().animate({
+                        left: "-=10"
+                    });
+                }
+            }); 
+        </script>
+    </center>
+</body>
+
+</html>

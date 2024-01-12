@@ -1,0 +1,47 @@
+<!--Q.11 Count pair with given sum.
+Given an array of N integers, and an integer K, find the number of pairs of elements in the array whose sum is equal to K.
+
+Example 1:
+Input:
+N = 4, K = 6
+arr[] = {1,5,7,1}
+Output: 2
+Explanation: 
+arr[0] + arr[1] = 1 + 5 = 6 
+and arr[1] + arr[3] = 5 + 1 = 6.
+
+Example 2:
+Input:
+N = 4, X = 2
+arr[] = {1, 1, 1, 1}
+Output: 6
+Explanation:
+Each 1 will produce sum 2 with any 1.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = [1, 2, 3, 4, 5, 6, 5];
+        var count = 0;
+        var k = 10;
+        for (let i = 0; i < a.length; i++) {
+            var sum = 0;
+            for (let j = i + 1; j < a.length; j++) {
+                sum = a[i] + a[j];
+                if (sum == k) {
+                    count++;
+                }
+            }
+        }
+        document.writeln("output : " + count + "<br>");
+    </script>
+</body>
+
+</html>

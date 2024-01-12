@@ -1,0 +1,28 @@
+<!-- 
+1
+10
+1 1
+1  0
+10101
+-->
+<pre>
+<script>
+    var i, j, n =5;
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            if (i == j || j == 1 || i == n) {
+                if (j % 2 == 0) {
+                    document.write("0");
+                }
+                else {
+                    document.write("1");
+                }
+            }
+            else{
+                document.write("&nbsp;");
+            }
+        }
+        document.write("<br>");
+    } 
+</script>
+</pre>

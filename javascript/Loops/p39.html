@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Enter no. ") ;
+        let m = n ;
+        let sum = 0 ;
+
+        while(n!=0){
+            let a = n%10 ;
+            let p = 1 ;
+            for(let i = 1 ; i <= a ; i++){
+                p = p * i ;    
+            }
+            sum = sum + p ;
+            n = Math.floor(n/10) ;
+        }
+        document.write(sum) ;
+        if(m==sum){
+            document.write("No is strong");
+        }
+        else{
+            document.write("no. is not strong");
+        }
+    </script>
+</body>
+</html>

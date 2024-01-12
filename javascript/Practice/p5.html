@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .g {
+            display: flex;
+            width: 20px;
+            /* float: left; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" id="raj">
+    <button onclick="raj()">click</button>
+    <input type="button" value="click" onclick="raj()">
+    <script>
+        // function raj() {
+        // n = document.getElementById("raj").value
+        n = 5;
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write("<h1 class='g'style='width: 15px; background-color: aqua; height: 30px;'>" + i + "</h1>")
+            }
+            document.write("<br>")
+        }
+        // }
+    </script>
+</body>
+
+</html>

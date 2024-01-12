@@ -1,0 +1,24 @@
+<!-- 
+12345
+ 1__4
+  1_3
+   12
+    1
+-->
+<pre>
+<script>
+        var i,j,n=5,sp;
+        for(i=n;i>=1;i--){
+            for(sp=1;sp<=n-i;sp++){
+                document.write(" ");
+            }
+            for(j=1;j<=i;j++){
+                if(i==j||i==5||j==1)
+                document.write(j);
+               else
+               document.write("_");
+            }
+            document.write("<br>");
+        }
+</script>    
+</pre>

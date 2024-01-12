@@ -1,0 +1,18 @@
+<html>
+    <script> 
+        let n = prompt("Enter no. ");
+        let temp = n ;
+        let sum = 0 ;
+        while(temp!=0){
+            let a = temp%10 ;
+            sum = sum +(a*a*a) ;
+            temp = Math.floor(temp/10) ;
+        }
+        if(sum == n){
+            document.write("no. is palindrome");
+        }
+        else{
+            document.write("no. is not palindrome");
+        }
+</script>
+</html>

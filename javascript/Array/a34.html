@@ -1,0 +1,29 @@
+<!-- 34. Write a java program to implement linear search -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = [3, 2, 5, 4, 1, 2, 6, 9, 8, 7];
+        var search = 2;
+        var flag = true;
+        for (let i = 0; i < a.length; i++) {
+            if (search === a[i]) {
+                document.write(search + " search");
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            document.write(search + " does not exesist");
+        }
+    </script>
+</body>
+
+</html>

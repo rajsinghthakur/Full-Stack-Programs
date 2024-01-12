@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <pre>
+            <script>
+                var name = prompt("Enter Your Name");
+                var gender = prompt("Enter Your gender");
+                var item = prompt("How Many Product You Have Purchis");
+                
+                // int a[] = new int[10];
+                // a[0] = 12;
+                // a[0] = "raj";xxxx
+
+                // var a = [];
+                // a[0] = "raj";
+                // a[1] = 12;
+
+                var product = [];
+                var quntity = [];
+                var prise = [];
+                var total = [];
+                var discount = [];
+                var totalprice = 0;
+                var afterdiscount = 0;
+                var gift = "null";
+                for (var i = 0; i < item; i++) {
+                    product[i] = prompt("Enter Item Name " + (i * 1 + 1) + ":");
+                    quntity[i] = prompt("Enter quntity of " + (product[i]) + ":");
+                    prise[i] = (i * 1 + 1) * 10;
+                    total[i] = (prise[i] * 1) * (quntity[i] * 1);
+                    totalprice += total[i];
+                    discount[i] = total[i];
+                    if (quntity[0] >= 4) {
+                        discount[0] = (total[0]) - ((total[0] * 5) / 100);
+                    }
+                    afterdiscount += discount[i];
+                }
+                var bag = prompt("If You Want Carry Bag");
+                // if (item == 10) {
+                //     afterdiscount = (afterdiscount) - ((afterdiscount * 15) / 100);
+                //     totalprice = (totalprice) - ((totalprice * 15) / 100);
+                // } else if (item >= 5) {
+                //     afterdiscount = (afterdiscount) - ((afterdiscount * 10) / 100);
+                //     totalprice = (totalprice) - ((totalprice * 15) / 100);
+                // } else {
+                //     afterdiscount = (afterdiscount);
+                //     totalprice = (totalprice);
+                // }
+                if (gender == "male") {
+                    gift = "Ladger Wallet"
+                } else if (gender == "female") {
+                    gift = "Cadeberry"
+                }
+                var ap = ((totalprice * 10) / 100);
+                var dp = ((afterdiscount * 10) / 100);
+                document.write("<br>D-Mart");
+                document.write("<br>" + name + "                             27-11-2023");
+                document.write("<br>-----------------------------------------------<br><div><table><tr><th>Item Name</th><th>Quntity</th><th>Price</th><th>Total</th><th>After Discount</th></tr>");
+                for (let i = 0; i < product.length; i++) {
+                    document.write("<tr><th>" + product[i] + "</th><th>" + quntity[i] + "</th><th>" + prise[i] + "</th><th>" + total[i] + " Rs</th><th>" + discount[i] + " Rs</th></tr>");
+                }
+                document.write("</table></div>-----------------------------------------------");
+                document.write("<br>                               A.P        D.P    ");
+                document.write("<br>                              " + totalprice + "        " + afterdiscount + "    ");
+                document.write("<br>Gift :- " + gift + "              0.00        0.00    <br>");
+                var bagprice = 0;
+                if (bag == "yes") {
+                    bagprice = 10.00;
+                    totalprice += 10;
+                    afterdiscount += 10;
+                } else if (bag == "no") {
+                    bagprice = 0.00;
+                }
+                document.write("<br>Carry Bag : " + bag + "                 " + bagprice + "        " + bagprice + "    ");
+                document.write("<br>GST (10%)                     " + ap + "        " + dp + "    ");
+                document.write("<br>-----------------------------------------------");
+                document.write("<br>                     " + (totalprice + ap) + "        " + (afterdiscount + dp) + " Rs  <br><br>");
+                document.write("Thanku You")
+            </script>
+        </pre>
+    </center>
+</body>
+
+</html>

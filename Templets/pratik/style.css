@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 100vw;
+    height: 220px;
+    /* border: 1px solid black; */
+    background: url("svgviewer-png-output\ \(5\).png") 0% 50% no-repeat;
+    background-size: cover;
+}
+
+.black-shed {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contener {
+    height: 100%;
+    width: 500px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: grid;
+    place-items: center;
+}
+
+.content small {
+    color: aliceblue;
+}
+
+.content h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.content button {
+    padding: 5px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(220, 157, 0);
+    font-size: 17px;
+}
+
+span {
+    font-size: 25px;
+}

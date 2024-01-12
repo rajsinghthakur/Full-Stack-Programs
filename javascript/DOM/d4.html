@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #111; /* Background color for better contrast */
+    }
+
+    .neon-cursor {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #00ff00; /* Neon green */
+      border-radius: 50%;
+      pointer-events: none;
+      mix-blend-mode: screen;
+      transform: translate(-50%, -50%);
+      transition: width 0.2s, height 0.2s, box-shadow 0.4s;
+      box-shadow: 0 0 10px 5px #00ff00; /* Neon glow effect */
+    }
+  </style>
+</head>
+<body>
+  <div class="neon-cursor"></div>
+
+  <script>
+    const cursor = document.querySelector('.neon-cursor');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = `${e.pageX}px`;
+      cursor.style.top = `${e.pageY}px`;
+    });
+
+    document.addEventListener('mouseenter', () => {
+      cursor.style.width = '40px';
+      cursor.style.height = '40px';
+      cursor.style.boxShadow = '0 0 20px 10px #00ff00'; /* Enlarge glow effect */
+    });
+
+    document.addEventListener('mouseleave', () => {
+      cursor.style.width = '20px';
+      cursor.style.height = '20px';
+      cursor.style.boxShadow = '0 0 10px 5px #00ff00'; /* Original glow effect */
+    });
+  </script>
+</body>
+</html>

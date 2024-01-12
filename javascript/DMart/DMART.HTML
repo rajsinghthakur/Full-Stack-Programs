@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmart</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .Dmart {
+        height: 700px;
+        width: 95%;
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+
+    .header {
+        height: 70px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .img-logo {
+        height: 70px;
+        width: 15%;
+        border: 2px solid black;
+        ;
+    }
+
+    .header h1 {
+        height: 70px;
+        width: 70%;
+        display: flex;
+        color: white;
+        justify-content: center;
+        background-color: rgb(219, 244, 31);
+        align-items: center;
+        font-size: 55px;
+        border: 2px solid black;
+    }
+
+    .nav {
+        height: 60px;
+        width: 100%;
+        border: 2px solid black;
+        background-color: #daa520;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav ul {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav ul li a {
+        list-style: none;
+        height: 30px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 17px;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .nav ul li {
+        list-style: none;
+    }
+
+    .nav ul li a:hover {
+        color: white;
+    }
+
+    .container {
+        height: 670px;
+        width: 100%;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+    }
+
+    table {
+        border: 2px solid black;
+    }
+
+    th,td {
+        border: 1px solid black;
+        text-align: center;
+        background-color: #20bbda;
+    }
+</style>
+
+<body>
+    <section class="Dmart">
+        <div class="header">
+            <img src="image.webp" class="img-logo">
+            <h1>Welcome in D-Mart</h1>
+            <img src="dmart.png" class="img-logo">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Categories</a></li>
+                <li><a href="">Contects</a></li>
+                <li><a href="">Feedback</a></li>
+            </ul>
+        </div>
+         <script>
+                var p1 = 10, p2 = 20, p3 = 30, p4 = 40, p5 = 50, p6 = 60, p7 = 70, p8 = 80, p9 = 90, p10 = 100, totalAmt,
+                    totalAmt2, totalAmt3, totalAmt4, totalAmt5, totalAmt6, totalAmt7, totalAmt8, totalAmt9, totalAmt10;
+                var dis, dis1, dis2, dis3, dis4, afterDiscount2, afterDiscount3, afterDiscount4, afterDiscount5,
+                    afterDiscount6, afterDiscount7, afterDiscount8, afterDiscount9, afterDiscount10, afterDisPrice,
+                    actualPrice1 = 0, finalPrice1, finalPrice2, actualPrice, aftGst = 0, disGst = 0;
+                var afterDiscount1;
+                var bag = 10.0;
+                var gift = null;
+
+                var name = prompt("Enter your name");
+                var gender = prompt("Enter your gender");
+                var item1 = prompt("Enter 1st item");
+                var q1 = prompt("Enter quantity");
+                var item2 = prompt("Enter 2nd item");
+                var q2 = prompt("Enter quantity");
+                var item3 = prompt("Enter 3rd item");
+                var q3 = prompt("Enter quantity");
+                var item4 = prompt("Enter 4th item");
+                var q4 = prompt("Enter quantity");
+                var item5 = prompt("Enter 5th item");
+                var q5 = prompt("Enter quantity");
+                var item6 = prompt("Enter 6th item");
+                var q6 = prompt("Enter quantity");
+                var item7 = prompt("Enter 7th item");
+                var q7 = prompt("Enter quantity");
+                var item8 = prompt("Enter 8th item");
+                var q8 = prompt("Enter quantity");
+                var item9 = prompt("Enter 9th item");
+                var q9 = prompt("Enter quantity");
+                var item10 = prompt("Enter 10th item");
+                var q10 = prompt("Enter quantity");
+                var cb = prompt("Do you want a CarryBag? - YES or NO");
+                (cb == 'yes' || 'YES') ? bag = 10 : bag = 0;
+                if (q1 > 4) {
+                    totalAmt = (p1 * q1);
+                    dis1 = ((totalAmt * 5) / 100);
+                    afterDiscount1 = (float)(totalAmt - dis1);
+                } else {
+                    totalAmt = (p1 * q1);
+                    afterDiscount1 = (totalAmt);
+                    dis1 = 0;
+                }
+                totalAmt2 = (p2 * q2);
+                afterDiscount2 = (totalAmt2);
+                totalAmt3 = (p3 * q3);
+                afterDiscount3 = (totalAmt3);
+                totalAmt4 = (p4 * q4);
+                afterDiscount4 = (totalAmt4);
+                totalAmt5 = (p5 * q5);
+                dis2 = ((totalAmt5 * 10) / 100);
+                afterDiscount5 = (totalAmt5 - dis2);
+                totalAmt6 = (p6 * q6);
+                afterDiscount6 = (totalAmt6);
+                totalAmt7 = (p7 * q7);
+                afterDiscount7 = (totalAmt7);
+                totalAmt8 = (p8 * q8);
+                afterDiscount8 = (totalAmt8);
+                totalAmt9 = (p9 * q9);
+                afterDiscount9 = (totalAmt9);
+                totalAmt10 = (p10 * q10);
+                dis3 = ((totalAmt10 * 15) / 100);
+                afterDiscount10 = (totalAmt10 - dis3);
+                actualPrice = ((totalAmt + totalAmt2) + (totalAmt3 + totalAmt4) + (totalAmt5 + totalAmt6)
+                    + (totalAmt7 + totalAmt8) + bag + (totalAmt9 + totalAmt10));
+                afterDisPrice = (actualPrice - (dis1 - dis2 - dis3) + bag);
+
+                if (actualPrice >= 10000) {
+                    dis4 = ((actualPrice * 15.0) / 100.0);
+                    actualPrice1 = (actualPrice - dis4);
+                } else if (actualPrice >= 5000 && actualPrice <= 10000) {
+                    dis4 = ((actualPrice * 10.0) / 100.0);
+                    actualPrice1 = (actualPrice - dis4);
+                } else {
+                    dis4 = 0;
+                    actualPrice1 = actualPrice;
+                }
+                aftGst = ((actualPrice1 * 10.0) / 100);
+                disGst = ((afterDisPrice * 10) / 100);
+                finalPrice1 = (actualPrice + aftGst);
+                finalPrice2 = (afterDisPrice + disGst);
+
+                if (gender == 'F' || gender == 'f') {
+                    gift = " :- Cadeberry";
+                } else if (gender == 'M' || gender == 'm') {
+                    gift = " :-Ladger Wallet";
+                } else {
+                    gift = (null);
+                }
+
+                document.write("<center>");
+
+                document.write("<div style = 'border: 2px solid black; width=60%; height = 10px;  background-color: #daa520;'><h1> D-Mart </h1></div>");
+                document.write("</center>");
+                document.write("<div style = 'border: 2px solid black; width=60%; height = 500px;'>");
+                document.write(" <span>Name : " + name + "</span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<span>Date : 27/11/2023</span>");
+                // document.write(" <h3>Date : 27/11/2023</h3>");
+                document.write("<center><table style='width:60%;'>  <tr><th>Item Name</th><th>Quantity</th><th>Price</th><th>Total</th><th>After Discount</th></tr> <tr><td>" + item1 + "</td>" + "<td>" + q1 + "</td><td>" + p1 + "</td> <td>" + totalAmt + "</td>  <td>" + afterDiscount1 + "Rs" + "</td> </tr> <tr><td>" + item2 + "</td>" + "<td>" + q2 + "</td><td>" + p2 + "</td> <td>" + totalAmt2 + "</td>  <td>" + afterDiscount2 + "Rs" + "</td></tr> <tr><td>" + item3 + "</td>" + "<td>" + q3 + "</td><td>" + p3 + "</td> <td>" + totalAmt3 + "</td>  <td>" + afterDiscount3 + "Rs" + "</td></tr> <tr><td>" + item4 + "</td>" + "<td>" + q4 + "</td><td>" + p4 + "</td> <td>" + totalAmt4 + "</td>  <td>" + afterDiscount4 + "Rs" + "</td></tr> <tr><td>" + item5 + "</td>" + "<td>" + q5 + "</td><td>" + p5 + "</td> <td>" + totalAmt5 + "</td>  <td>" + afterDiscount5 + "Rs" + "</td></tr> <tr><td>" + item6 + "</td>" + "<td>" + q6 + "</td><td>" + p6 + "</td> <td>" + totalAmt6 + "</td>  <td>" + afterDiscount6 + "Rs" + "</td></tr> <tr><td>" + item7 + "</td>" + "<td>" + q7 + "</td><td>" + p7 + "</td> <td>" + totalAmt7 + "</td>  <td>" + afterDiscount7 + "Rs" + "</td></tr> <tr><td>" + item8 + "</td>" + "<td>" + q8 + "</td><td>" + p8 + "</td> <td>" + totalAmt8 + "</td>  <td>" + afterDiscount8 + "Rs" + "</td> </tr> <tr><td>" + item9 + "</td>" + "<td>" + q9 + "</td><td>" + p9 + "</td> <td>" + totalAmt9 + "</td>  <td>" + afterDiscount9 + "Rs" + "</td></tr> <tr><td>" + item10 + "</td>" + "<td>" + q10 + "</td><td>" + p10 + "</td> <td>" + totalAmt10 + "</td>  <td>" + afterDiscount10 + "Rs" + "</td></tr> <tr><th> </th> <th></th> <th></th><th>A.P.</th><th>D.P.</th></tr> <tr><td> </td><td> </td><td> </td><td>" + actualPrice + " </td> <td>" + afterDisPrice + " </td> </tr> <tr><td colspan='3'><h4>" + "Gift :- " + gift + "</h4></td><td> 0.00</td> <td> 0.00</td>  <tr><td colspan='3'><h4>" + "CarryBag :- " + cb + "</h4></td><td>" + bag + "</td> <td>" + bag + "</td></tr>  <tr><td colspan='3'><h4>GST (10%)</h4></td><td>" + aftGst + "</td> <td>" + disGst + "</td></tr>  <tr><td colspan='3'> </td> <td>" + finalPrice1 + "Rs" + "</td> <td>" + finalPrice1 + "Rs" + "</td></tr> ");
+
+                document.write("</center></table>");
+                document.write("<center><h2>Thank You</h2><h2>To Visit</h2><h2>D-Mart</h2></center>")
+                document.write("</div>");
+            </script>
+    
+    </section>
+</body>
+
+</html>

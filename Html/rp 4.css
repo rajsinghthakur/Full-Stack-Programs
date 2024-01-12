@@ -1,0 +1,35 @@
+body{
+    padding:0;
+    margin: 10cm;
+    background-image:linear-gradient(90deg,black,rgb(92, 87, 87),black);
+    background-image: radial-gradient();
+    overflow: hidden;
+    display: flex;   
+    size: 1in;
+}
+
+.c1{
+    position: relative;
+    font-size: 150px;
+}
+
+span{
+    font-family:cursive;
+    position: relative;
+    text-shadow: black 13px 13px 13px;
+    display: inline-block;
+    color: rgb(118, 194, 68);
+    letter-spacing: 10px;
+    animation: waveAnim .5s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waveAnim{
+    0%,40%,100% {
+        transform: translateY(1);
+    }
+    20%{
+
+        transform:  translateY(-100px);
+    }
+}

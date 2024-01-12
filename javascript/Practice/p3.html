@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main {
+            border: 2px solid rgb(255, 0, 0);
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        nav {
+            /* background-color: aqua; */
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 3vw;
+            /* position:sticky; */
+            /* z-index: 1; */
+        }
+
+        .nav-part2 {
+            display: flex;
+            /* background-color: beige; */
+            gap: calc(10vw);
+        }
+
+        .logo {
+            /* border: 1px solid black; */
+            background-image: url("dmart.png");
+            background-size: cover;
+            height: calc(3vh + 3vw);
+            width: calc(13vh + 13vw);
+        }
+
+        nav h4 {
+            font-size: 1.5vmax;
+        }
+
+        .contener {
+            background-color: tomato;
+            /* height: calc(100% - 100px); */
+            width: 100%;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: space-evenly; */
+        }
+
+        .c {
+            border: 1px solid black;
+            background-color: aqua;
+            height: 400px;
+            width: 400px;
+            float: left;
+            gap: calc(10vw);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo"></div>
+            <div class="nav-part2">
+                <h4>Home</h4>
+                <h4>Product</h4>
+                <h4>Account</h4>
+                <h4>Login</h4>
+            </div>
+        </nav>
+        <div class="contener">
+            <div class="c c1"></div>
+            <div class="c c2"></div>
+            <div class="c c3"></div>
+            <div class="c c4"></div>
+            <div class="c c5"></div>
+            <div class="c c6"></div>
+            <div class="c c7"></div>
+            <div class="c c8"></div>
+            <div class="c c9"></div>
+            <div class="c c10"></div>
+        </div>
+    </div>
+</body>
+
+</html>

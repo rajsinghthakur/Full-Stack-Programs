@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.section-1{
+    border: 1px solid red;
+    height: 99vh;
+    width: 99.6vw;
+}
+.imag{
+    border: 1px solid black;
+    background-image: url("image.webp");
+    height: 99vh;
+    width: 99.6vw;
+}

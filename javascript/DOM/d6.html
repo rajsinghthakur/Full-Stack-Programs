@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Snack Cursor</title>
+  <style>
+    body {
+      overflow: hidden; /* Hide scroll bars */
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Background color for better visibility */
+    }
+
+    .snack-cursor {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: #00ff00; /* Neon green color */
+      border-radius: 50%;
+      animation: neonGlow 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes neonGlow {
+      0% {
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+      }
+      100% {
+        box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Your content goes here -->
+  <h1>Welcome to Neon Snack Cursor!</h1>
+  <p>This is your neon snack cursor in action.</p>
+
+  <!-- Feel free to add more content as needed -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Create a div element for the cursor
+      var cursor = document.createElement("div");
+      cursor.className = "snack-cursor";
+      document.body.appendChild(cursor);
+
+      // Add mousemove event listener to update cursor position
+      document.addEventListener("mousemove", function(e) {
+        cursor.style.top = (e.pageY - 20) + "px";
+        cursor.style.left = (e.pageX - 20) + "px";
+      });
+    });
+  </script>
+</body>
+</html>

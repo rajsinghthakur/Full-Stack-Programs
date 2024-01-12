@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* border: 10px dotted; */
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="bulb" src="image/bulbon.jpg" width="500px" alt="">
+    <script>
+        var obj = document.getElementById("bulb");
+        obj.src = "image/bulboff.jpg";
+        obj.width = "300";
+        obj.height = 500;
+        // obj.border = "10px dotted black";
+        obj.border = "10px dotted";
+        obj.style.borderColor = "red";
+        obj.style.borderRadius = "50px";
+        obj.style.borderImage = "image/bulbon.jpg";
+        obj.style.backgroundColor = "red";
+    </script>
+</body>
+
+</html>

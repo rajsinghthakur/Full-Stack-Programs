@@ -1,0 +1,15 @@
+{
+  "name": "testcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "joke.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "one-liner-joke": "^1.2.2"
+  }
+}

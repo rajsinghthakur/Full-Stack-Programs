@@ -1,0 +1,26 @@
+<!-- 
+    ABCDE
+     A__D
+      A_C
+       AB
+        A
+-->
+<pre>
+<script>
+    var i,j,sp,n=5,a;
+    for(i=n;i>=1;i--){
+        a=65;
+        for(sp=1;sp<=n-i;sp++){
+            document.write(" ");
+        }
+        for(j=1;j<=i;j++){
+            if(i==j||i==5||j==1)
+            document.write(String.fromCharCode(a));
+         else
+         document.write("_");
+        a++;
+        }
+        document.write("<br>");
+    }
+</script>    
+</pre>

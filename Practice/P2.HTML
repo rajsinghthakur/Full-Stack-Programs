@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .m {
+            margin: 10px;
+            /* border: 1px solid black; */
+            width: 800px;
+            height: 3500px;
+            box-sizing: border-box;
+        }
+
+        .c1 {
+            display: flex;
+            width: 100%;
+            height: 500px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .c2 {
+            display: flex;
+            margin: 0;
+            margin-top: 499px;
+            /* border: 1px solid rgb(0, 146, 29); */
+            width: 100%;
+            height: 450px;
+            box-sizing: border-box;
+            /* float: left; */
+        }
+
+        .l {
+            box-sizing: border-box;
+            /* border: 1px solid rgb(255, 0, 0); */
+            background-color: #1a2e35;
+            width: 55%;
+            height: 100%;
+            float: left;
+        }
+
+        .l1 {
+            box-sizing: border-box;
+            /* border: 1px solid rgb(255, 0, 0); */
+            background-color: #ffffff;
+            width: 45%;
+            height: 100%;
+            float: left;
+        }
+
+        .r {
+            box-sizing: border-box;
+            background-color: #1cbbb4;
+            width: 45%;
+            height: 100%;
+            float: left;
+        }
+
+        .r1 {
+            box-sizing: border-box;
+            background-color: #ffffff;
+            width: 55%;
+            height: 100%;
+            float: left;
+        }
+
+        .b1 {
+            box-sizing: border-box;
+            width: 10%;
+            height: 10%;
+            /* border: 1px solid rgb(255, 255, 255); */
+            background-image: url("logo.png");
+            background-repeat: no-repeat;
+            background-size: 70%;
+            float: left;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+        .b2 {
+            margin-top: 15px;
+        }
+
+        .b3 {
+            /* border: 1px solid rgb(255, 255, 255); */
+            height: 60%;
+            width: 70%;
+            margin: 65px;
+            box-sizing: border-box;
+
+        }
+
+        .r1b1 {
+            /* border: 1px solid rgb(0, 0, 0); */
+            height: 70%;
+            width: 85%;
+            box-sizing: border-box;
+            margin-top: 60px;
+            margin-left: 20px;
+
+        }
+
+        .i1 {
+            height: 45px;
+            width: 45px;
+            background-image: url("menu.png");
+            background-repeat: no-repeat;
+            background-size: 70%;
+            margin-top: 10%;
+            margin-left: 75%;
+
+        }
+
+        .i {
+            margin-top: 100px;
+            margin-left: 100px;
+            border: 1px solid rgb(255, 255, 255);
+            height: 50%;
+            width: 70%;
+            background-image: url("experience-img.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .i2 {
+            box-sizing: border-box;
+            margin-top: 20%;
+            margin-left: 15%;
+            width: 99%;
+            height: 45%;
+            /* border: 1px solid rgb(38, 0, 255); */
+            background-image: url("slider-img.png");
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .p1 {
+            font-size: 30px;
+        }
+
+        .p2 {
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .d1 {
+            width: 47%;
+            height: 15%;
+            margin-top: 50px;
+            margin-right: 8px;
+            background-color: #f36262;
+        }
+
+        .d2 {
+            width: 47%;
+            height: 15%;
+            background-color: #ffffff;
+            color: #1a2e35;
+        }
+
+        .r1d1 {
+            border: 0;
+            width: 47%;
+            height: 15%;
+            margin-top: 50px;
+            margin-right: 8px;
+            background-color: #f36262;
+        }
+
+        .r1d2 {
+            width: 47%;
+            border: 0;
+            height: 15%;
+            background-color: #1a2e35;
+            color: #ffffff;
+        }
+
+        :hover.d1 {
+            width: 47%;
+            height: 15%;
+            margin-top: 50px;
+            margin-right: 8px;
+            border-color: #f36262;
+            color: #f36262;
+            background-color: #1a2e35;
+        }
+
+        :hover.d2 {
+            width: 47%;
+            height: 15%;
+            background-color: #1a2e35;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+
+        :hover.r1d1 {
+            width: 47%;
+            height: 15%;
+            margin-top: 50px;
+            margin-right: 8px;
+            color: #f36262;
+            border: 1px solid #f36262;
+            background-color: #ffffff;
+        }
+
+        :hover.r1d2 {
+            width: 47%;
+            height: 15%;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            color: #000000;
+        }
+
+        .c3 {
+            /* display: flex; */
+            /* border: 1px solid rgb(255, 0, 0); */
+            width: 100%;
+            height: 550px;
+            background-color: #1cbbb4;
+            box-sizing: border-box;
+        }
+
+        .a1 {
+            box-sizing: border-box;
+            border: 2px solid #1cbbb4;
+            height: 25%;
+        }
+
+        .a2 {
+            box-sizing: border-box;
+            border: 2px solid #1cbbb4;
+            height: 37.5%;
+        }
+
+        .a3 {
+            border: 2px solid #1cbbb4;
+            box-sizing: border-box;
+            height: 37.5%;
+        }
+
+        .a2i1 {
+            background-image: url("c1.png");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(255, 255, 255); */
+            height: 100%;
+            width: 27%;
+            float: left;
+            margin-left: 10%;
+        }
+
+        .a2i2 {
+            background-image: url("c2.png");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(255, 255, 255); */
+            height: 100%;
+            width: 27%;
+            float: left;
+        }
+
+        .a2i3 {
+            background-image: url("c3.png");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(255, 255, 255); */
+            height: 100%;
+            width: 27%;
+            float: left;
+        }
+
+        .a3i1 {
+            background-image: url("c4.png");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(255, 255, 255); */
+            height: 100%;
+            width: 27%;
+            float: left;
+            margin-left: 10%;
+        }
+
+        .a3i2 {
+            background-image: url("c5.png");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(255, 255, 255); */
+            height: 100%;
+            width: 27%;
+            float: left;
+        }
+
+        .a3i3 {
+            background-image: url("c6.png");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(255, 255, 255); */
+            height: 100%;
+            width: 27%;
+            float: left;
+        }
+
+        h3 {
+            margin-top: 75%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 10%;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .c4 {
+            color: #000000;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(0, 0, 0); */
+            width: 100%;
+            height: 650px;
+        }
+
+        .c4d1 {
+            color: #000000;
+            background-image: url("about-img.jpg");
+            background-repeat: no-repeat;
+            background-size: 75%;
+            background-position: 50%;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(255, 0, 0); */
+            width: 100%;
+            height: 60%;
+        }
+
+        .c4d2 {
+            color: #000000;
+            box-sizing: border-box;
+            text-align: center;
+            width: 100%;
+            height: 40%;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .c4b {
+            height: 40px;
+            margin-top: 25px;
+            width: 160px;
+            border: 0;
+            background-color: #f36262;
+
+            font-size: large;
+        }
+
+        .c5 {
+            color: #000000;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(0, 0, 0); */
+            width: 100%;
+            height: 600px;
+        }
+
+        .c5l {
+            color: #000000;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(255, 0, 0); */
+            width: 52%;
+            height: 100%;
+            float: left;
+        }
+
+        .c5r {
+            color: #000000;
+            background-image: url("freelance-img.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            box-sizing: border-box;
+            background-position: 0%;
+            /* border: 2px solid rgb(255, 0, 0); */
+            width: 48%;
+            height: 100%;
+            float: left;
+        }
+
+        .c5l1 {
+            color: #000000;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(0, 0, 0); */
+            width: 100%;
+            height: 20%;
+            float: left;
+            padding-left: 13%;
+            padding-top: 6%;
+            font-size: 14px;
+        }
+
+        .c5l2 {
+            color: #000000;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(0, 0, 0); */
+            width: 100%;
+            height: 20%;
+            float: left;
+        }
+
+        .c5l3 {
+            color: #000000;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(0, 0, 0); */
+            width: 100%;
+            height: 20%;
+            float: left;
+        }
+
+        .c5l4 {
+            color: #000000;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(0, 0, 0); */
+            width: 100%;
+            height: 20%;
+            float: left;
+        }
+
+        .c5l5 {
+            color: #000000;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(0, 0, 0); */
+            height: 20%;
+            width: 100%;
+            float: left;
+        }
+
+        .c5i1 {
+            margin: 13px;
+            margin-left: 10%;
+            background-image: url("f1.png");
+            background-size: 40%;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            /* border: 2px solid rgb(255, 0, 0); */
+            box-sizing: border-box;
+            width: 90px;
+            height: 90px;
+            background-color: #1cbbb4;
+        }
+
+        .c5i2 {
+            margin: 13px;
+            margin-left: 10%;
+            background-image: url("f2.png");
+            background-repeat: no-repeat;
+            background-size: 40%;
+            border-radius: 50%;
+            background-position: 50%;
+            box-sizing: border-box;
+            width: 90px;
+            height: 90px;
+            background-color: #1a2e35;
+        }
+
+        .c5i3 {
+            margin: 13px;
+            margin-left: 10%;
+            background-image: url("f3.png");
+            background-size: 40%;
+            border-radius: 50%;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            /* border: 2px solid rgb(255, 0, 0); */
+            width: 90px;
+            height: 90px;
+            box-sizing: border-box;
+            background-color: #1a2e35;
+        }
+
+        .c5i4 {
+            margin: 13px;
+            background-size: cover;
+            background-image: url("f4.png");
+            background-size: 40%;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            background-position: 50%;
+            margin-left: 10%;
+            /* border: 2px solid rgb(255, 0, 0); */
+            width: 90px;
+            height: 90px;
+            box-sizing: border-box;
+            background-color: #1a2e35;
+        }
+
+        .p1 {
+            color: #f15252;
+            fl
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="m">
+            <div class="c1">
+                <div class="l">
+                    <div class="b1"></div>
+                    <div class="b2" style="font-size: 25px;"><b>Spering</b></div>
+                    <div class="b3">
+                        <p class="p1"><b>YOU CAN<br>HIRE FREELANCER<br>HERE</b></p>
+                        <p class="p2"><b>It is a long established fact that a reader will be distracted by the readable
+                                content
+                                of a page</b></p>
+                        <input class="d1" type="button" value="Abount Us">
+                        <input class="d2" type="button" value="Get A Quote">
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="i1"></div>
+                    <div class="i2"></div>
+                </div>
+            </div>
+            <div class="c2">
+                <div class="l1">
+                    <div class="i"></div>
+                </div>
+                <div class="r1">
+                    <div class="r1b1">
+                        <p class="p1"><b style="color: #000000;">BEST EXPERINCED<br>FREELANCER HERE</b></p>
+                        <p class="p2"><b style="color: #000000;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Molestiae beatae
+                                laborum veritatis alias consectetur dignissimos dolore quo sint dolor possimus inventore
+                                ullam eaque animi enim deserunt, nostrum repellat et libero.</b></p>
+                        <input class="r1d1" type="button" value="Read More">
+                        <input class="r1d2" type="button" value="Hire">
+                    </div>
+                </div>
+            </div>
+            <div class="c3">
+                <div class="a1">
+                    <h2><U>CATEGORY</U></h2>
+                </div>
+                <div class="a2">
+                    <div class="a2i1">
+                        <h3>Design & Arts</h3>
+                    </div>
+                    <div class="a2i2">
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="a2i3">
+                        <h3>SEO Markting</h3>
+                    </div>
+                </div>
+                <div class="a3">
+                    <div class="a3i1">
+                        <h3>Video Edting</h3>
+                    </div>
+                    <div class="a3i2">
+                        <h3>Logo Design</h3>
+                    </div>
+                    <div class="a3i3">
+                        <h3>Game Desigh</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="c4">
+                <div class="c4d1"></div>
+                <div class="c4d2">
+                    <h1 style="color: #000000;">ABOUT SPERING COMPANY</h1>
+                    <P style="color: #000000; margin-top: 20px;">There are many variations of passages of Lorem Ipsum
+                        available, but the
+                        majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If youThere are many variations of passages of Lorem Ipsum available, but the
+                        majority
+                        have suffered alteration in some form, by injected humour, or randomised words which don't look
+                        even
+                        slightly believable. If you</P>
+                    <input class="c4b" type="button" value="Read More">
+                </div>
+            </div>
+            <div class="c5">
+                <div class="c5l">
+                    <div class="c5l1">
+                        <h1 style="color: #000000;">WORK FREELANCER HAS<br>DONE</h1>
+                    </div>
+                    <div class="c5l2">
+                        <div class="c5i1">
+                        </div>
+                        <p class="p1">$250 Million</p>
+                        <p class="p2">Paid to Freelancers</p>
+
+                    </div>
+                    <div class="c5l3">
+                        <div class="c5i2">
+                        </div>
+                        <p class="p1">2 Million</p>
+                        <p class="p2">Paid Invoices</p>
+
+                    </div>
+                    <div class="c5l4">
+                        <div class="c5i3">
+                        </div>
+                        <p class="p1">700,000</p>
+                        <p class="p2">Worldwide <br>Freelancer</p>
+
+                    </div>
+                    <div class="c5l5">
+                        <div class="c5i4">
+                        </div>
+                        <p class="p1">98%</p>
+                        <p class="p2">Customer <br>Satisfaction Rate</p>
+
+                    </div>
+                </div>
+                <div class="c5r"></div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

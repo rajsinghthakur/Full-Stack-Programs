@@ -1,0 +1,29 @@
+<!-- 
+A
+AB
+A C
+A  D
+ABCDE
+-->
+<pre>
+<script>
+        var i,j,p;
+        var num=prompt("Enter the number")*1;
+        for(i=1;i<=num;i++){
+            p=65;
+            for(j=1;j<=i;j++){
+                if(i==j||i==num||j==1){
+                document.write(String.fromCharCode(p));
+                p++;
+                }
+                else{
+                    document.write("&nbsp;");
+                }
+            }
+
+    
+            document.write("<br>");
+        }
+    
+    </script>    
+    </pre> 

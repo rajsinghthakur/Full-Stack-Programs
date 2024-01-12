@@ -1,0 +1,19 @@
+<html>
+<pre>
+<script>
+    let n = prompt("Enter no. ")*1 ;
+
+    for(let i = 65 ; i <  (65+n) ; i++){
+        for(j = 65 ; j <= (i) ; j++){
+            if(i==j||j== 65|| i == (65+n-1)){
+                document.write(String.fromCharCode(j));
+            }
+            else{
+                document.write(" ") ;
+            }
+        }
+        document.write("<br>") ;
+    }
+</script>
+</pre>
+</html>

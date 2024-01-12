@@ -1,0 +1,22 @@
+<html>
+<pre>
+<script>
+
+let n1 = prompt("Enter 1st no. ") ;
+let n2 = prompt("Enter 2nd no.")
+    for(let i = n1 ; i <= n2 ; i++){
+        let rev = 0 ;
+        let n = i ;
+        while(n != 0){
+            let rem = n % 10 ;
+            rev = (rev*10) + rem ;
+            n = Math.floor(n/10) ;
+        }
+        if(i==rev){
+            document.write(rev) ;
+        }
+
+    }   
+</script>
+</pre>
+</html>

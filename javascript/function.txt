@@ -1,0 +1,25 @@
+closer:-
+
+function perent() {
+    var x = "raj";
+    return function child() {
+        console.log(x);
+    }
+}
+
+
+
+
+callback:-
+
+function test1(sum) {
+    console.log(sum);
+}
+
+function test2(a, b, callback) {
+    var sum = a + b;
+    callback(sum)
+    console.log("" + callback);
+}
+
+test2(2, 3, test1);

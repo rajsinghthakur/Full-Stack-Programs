@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Creepster&family=Foldit:wght@500&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: rgb(255, 128, 0);
+        }
+
+        html,
+        body {
+            height: 48.5vw;
+            width: 100vw;
+        }
+
+        .main {
+            background: url("image/night.jpg") no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .form {
+            background: rgba(0, 0, 0, 0.5);
+            height: 80%;
+            width: 80%;
+            padding: 20px;
+            /* border: 2px solid orange; */
+            position: relative;
+            /* box-shadow: 3px 3px 10px 3px rgb(236, 85, 31); */
+        }
+
+        form h1 {
+            cursor: alias;
+            text-align: center;
+            font-size: 3.4vw;
+            font-family: 'Bungee Spice', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 25px;
+            font-family: 'Bungee Spice', sans-serif;
+            margin: 20px;
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            /* border: 2px solid rgb(255, 128, 0); */
+            height: 3vw;
+            width: 20vw;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            padding: 0px 10px;
+            font-size: 20px;
+            position: absolute;
+            left: 260px;
+            top: 83px;
+            box-shadow: 3px 3px 10px 3px rgb(236, 85, 31);
+            color: white;
+        }
+
+        .input1,
+        .l1 {
+            top: 83px;
+        }
+
+        .input2,
+        .l2 {
+            top: 149px;
+        }
+
+        .input3,
+        .l3 {
+            top: 215px;
+        }
+
+        .input4,
+        .l4 {
+            top: 283px;
+        }
+
+        .input5 {
+            top: 350px;
+            height: 8vw;
+            width: 58.5vw;
+        }
+
+        .l1,
+        .l2,
+        .l3,
+        .l4 {
+            position: absolute;
+            left: 600px;
+        }
+
+        .i {
+            position: absolute;
+            left: 850px;
+        }
+
+        .e {
+            width: 58.5vw;
+        }
+
+        .submit {
+            border: orange;
+            height: 40px;
+            width: 10vw;
+            position: absolute;
+            top: 520px;
+            color: white;
+            font-weight: bolder;
+            font-size: large;
+            border-radius: 10px;
+            background-image: linear-gradient(orange, rgb(236, 85, 31));
+            left: calc(50% - 75px);
+            cursor: pointer;
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #111;
+            /* Background color for better contrast */
+        }
+
+        .neon-cursor {
+            background: url("image/pumpkin.jpg") no-repeat 0%;
+            background-size: cover;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(236, 85, 31);
+            /* Neon green */
+            border-radius: 50%;
+            pointer-events: none;
+            mix-blend-mode: screen;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s, height 0.2s, box-shadow 0.4s;
+            box-shadow: 0 0 10px 10px rgb(236, 85, 31);
+            z-index: 10;
+            /* Neon glow effect */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="neon-cursor"></div>
+        <div class="form">
+            <form action="">
+                <h1>REGISTRATION FORM</h1>
+                <label for="">FIRST NAME </label>
+                <input class="input1" type="text" name="fname" placeholder="First Name" id="fname">
+              
+                <label class="l1" for="">LAST NAME </label>
+                <input class="input1 i" type="text" name="Lname" placeholder="LAST Name" id="lname">
+                <br>
+                <br>
+                <br>
+                <label for="">MOBILE</label>
+                <input class="input2" type="NUMBER" name="number" placeholder="NUMBER" id="number">
+                <label class="l2" for="">DATE OF BIRTH</label>
+                <input class="input2 i" type="date" name="date" placeholder="DATE OF BIRTH" id="dob">
+                <br>
+                <br>
+                <br>
+                <label for="">EMAIL</label>
+                <input class="input3 e" type="email" name="email" placeholder="EMAIL" id="email">
+                <br>
+                <br>
+                <br>
+                <label for="">ADDRESS</label>
+                <input class="input4 e" type="address" name="ADDRESS" placeholder="ADDRESS" id="add">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="">FEEDBACK</label>
+                <input class="input5" type="text" name="number" placeholder="ENTER" id="feed">
+                <div class="submit" onclick="sub()">SUBMIT</div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function sub() {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var number = document.getElementById("number").value;
+            var dob = document.getElementById("dob").value;
+            var email = document.getElementById("email").value;
+            var add = document.getElementById("add").value;
+            var feed = document.getElementById("feed").value;
+
+            if (!(fname.match("^[a-zA-Z\s]+$") && fname.length > 2)) {
+                alert("first name is incorrect");
+            } else if (!(lname.match("^[a-zA-Z\s]+$") && lname.length > 2)) {
+                alert("last name is incorrect");
+            } else if (number.length != 10) {
+                alert("number is incorrect");
+            } else if (!(dob.match("^[0-9-\s]+$") && dob.length == 10)) {
+                alert("date of birth is incorrect");
+            } else if (!(email.match("^[a-zA-Z0-9@.\s]+$") && email.length > 12)) {
+                alert("email is incorrect");
+            } else if (!(add.match("^[a-z A-Z 0-9-.()\s]+$") && add.length > 3)) {
+                alert("Address is incurrect");
+            } else if (!(feed.match("^[a-z A-Z.\s]+$"))) {
+                alert("Feedback is incorrect");
+            } else {
+                alert("submit successfuly");
+            }
+        }
+    </script>
+    <script>
+        const cursor = document.querySelector('.neon-cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.pageX}px`;
+            cursor.style.top = `${e.pageY}px`;
+        });
+
+        document.addEventListener('mouseenter', () => {
+            cursor.style.width = '40px';
+            cursor.style.height = '40px';
+            cursor.style.boxShadow = '0 0 20px 20px rgb(236, 85, 31)'; /* Enlarge glow effect */
+        });
+
+        document.addEventListener('mouseleave', () => {
+            cursor.style.width = '20px';
+            cursor.style.height = '20px';
+            cursor.style.boxShadow = '0 0 10px 10px rgb(236, 85, 31)'; /* Original glow effect */
+        });
+    </script>
+</body>
+
+</html>

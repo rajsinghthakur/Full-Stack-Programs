@@ -1,0 +1,18 @@
+<script>
+    var i,j,sp;
+    var n=5;
+    for(i=1;i<=n;i++){
+        for(sp=n-i;sp>=1;sp--){
+            document.write("&nbsp;");
+        }
+        for(j=i*2-1;j>=i;j--){
+            if(j>=i){
+                document.write("&nbsp;"+j);
+            }
+            else{
+                break;
+            }
+        }
+        document.write("<br>");
+    }
+</script>
