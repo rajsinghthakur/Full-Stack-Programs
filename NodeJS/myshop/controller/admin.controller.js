@@ -11,7 +11,7 @@ export const signUp = (request, response, next) => {
         .then(result => {
             return response.status(200).json({ message: 'Signup success' });
         }).catch(err => {
-            return response.status(500).json({ error: 'Internal Server Error' });
+            return response.status(500).json({ error: 'Internal Server Error', error: err });
         });
 }
 
@@ -20,6 +20,7 @@ export const signIn = (request, response, next) => {
     let password = request.body.password;
 
     let admin = new Admin(null, username, password);
+
     admin.signIn()
         .then(result => {
             console.log(result);
@@ -27,6 +28,6 @@ export const signIn = (request, response, next) => {
                 return response.status(200).json({ message: 'Sign in success', data: result[0] });
             return response.status(401).json({ error: 'Unauthorized user' });
         }).catch(err => {
-            return response.status(500).json({ error: "Internal Server Error" });
+            return response.status(500).json({ error: "Internal Server Error", error: err });
         });
 }
