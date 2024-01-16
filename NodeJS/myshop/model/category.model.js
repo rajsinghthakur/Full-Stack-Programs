@@ -36,7 +36,7 @@ export default class Category {
             con.release();
           });
         }
-      })
+      });
     });
 
   }
