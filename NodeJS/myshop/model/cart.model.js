@@ -28,8 +28,24 @@ export default class Cart {
                 if (err) {
                     reject(err);
                 } else {
-                    let sql = "delete from cart where userId = ?";
-                    con.query(sql, [this.userId], (err, result) => {
+                    let sql = "delete from cart where id = ?";
+                    con.query(sql, [this.id], (err, result) => {
+                        err ? reject(err) : resolve(result);
+                        con.release();
+                    });
+                }
+            });
+        });
+    }
+
+    static list() {
+        return new Promise((resolve, reject) => {
+            pool.getConnection((err, con) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    let sql = 'select * from cart';
+                    con.query(sql, (err, result) => {
                         err ? reject(err) : resolve(result);
                         con.release();
                     });

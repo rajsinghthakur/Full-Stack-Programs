@@ -8,10 +8,10 @@ export const add = (request, response, next) => {
 
     cartitems.add()
         .then((result) => {
-            return response.status(200).json({ Message: "add successfully" })
+            return response.status(200).json({ Message: "add successfully" });
         })
         .catch((err) => {
-            return response.status(500).json({ Error: "internal server error", err })
+            return response.status(500).json({ Error: "internal server error", err });
         })
 }
 
@@ -23,10 +23,20 @@ export const remove = (request, response, next) => {
     cartitems.remove()
         .then((result) => {
             if (result.affectedRows != 0)
-            return response.status(200).json({ Message: "remove successfully" })
-            return response.status(400).json({ err: "unauthorized request..... data not found" })
+                return response.status(200).json({ Message: "remove successfully" });
+            return response.status(400).json({ err: "unauthorized request..... data not found" });
         })
         .catch((err) => {
-            return response.status(500).json({ Error: "internal server error", err })
+            return response.status(500).json({ Error: "internal server error", err });
+        })
+}
+
+export const list = (request, response, next) => {
+    CartItems.list()
+        .then((result) => {
+            return response.status(200).json({ Data: result });
+        })
+        .catch((err) => {
+            return response.status(500).json({ Error: "internal server error" })
         })
 }

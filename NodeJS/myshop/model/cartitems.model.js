@@ -38,4 +38,20 @@ export default class CartItems {
             });
         });
     }
+
+    static list() {
+        return new Promise((resolve, reject) => {
+            pool.getConnection((err, con) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    let sql = "select * from cartitems";
+                    con.query(sql, (err, result) => {
+                        err ? reject(err) : resolve(result);
+                        con.release();
+                    });
+                }
+            });
+        });
+    }
 }

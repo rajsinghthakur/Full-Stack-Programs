@@ -22,7 +22,7 @@ export const remove = (request, response, next) => {
 
     let orderitems = new OrderItems(id);
 
-    orderi.remove()
+    orderitems.remove()
         .then((result) => {
             if (result.affectedRows != 0)
                 return response.status(200).json({ message: "successfully remove to orderitem" });
@@ -30,5 +30,15 @@ export const remove = (request, response, next) => {
         })
         .catch((err) => {
             return response.status(500).json({ Error: "Internal server error", error: err })
+        })
+}
+
+export const list = (request, response, next) => {
+    OrderItems.list()
+        .then((result) => {
+            return response.status(200).json({ Data: result });
+        })
+        .catch((err) => {
+            return response.status(500).json({ Error: "Internal server error" });
         })
 }

@@ -1,4 +1,5 @@
 import Order from "../model/orderdetails.model.js";
+import OrderItems from "../model/orderitems.model.js";
 
 export const add = (request, response, next) => {
     let userId = request.body.userId;
@@ -32,5 +33,15 @@ export const remove = (request, response, next) => {
         })
         .catch((err) => {
             return response.status(500).json({ Error: "Internal server error", error: err })
+        })
+}
+
+export const list = (request, response, next) => {
+    Order.list()
+        .then((result) => {
+            return response.status(200).json({ Data: result });
+        })
+        .catch((err) => {
+            return response.status(500).json({ Error: "Internal server error", err })
         })
 }

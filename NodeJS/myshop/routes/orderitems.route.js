@@ -1,11 +1,16 @@
 import express from "express";
 
-import { add, remove } from "../controller/orderitems.controller.js"
+import { add, list, remove } from "../controller/orderitems.controller.js"
 
 const router = express.Router();
 
+// http://localhost:3000/orderitems/add
 router.post("/add", add);
 
-router.post("/remove", remove);
+// http://localhost:3000/orderitems/remove
+router.delete  ("/remove", remove);
+
+// http://localhost:3000/orderitems/list
+router.get("/list", list)
 
 export default router;

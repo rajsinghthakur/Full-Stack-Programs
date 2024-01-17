@@ -4,18 +4,25 @@ import { add, removeById, removeByName, update, list, listByCId, listById } from
 
 const router = express.Router();
 
+// http://localhost:3000/product/add
 router.post("/add", add);
 
-router.post("/removeById", removeById);
+// http://localhost:3000/product/removeById
+router.delete("/removeById", removeById);
 
-router.post("/removeByName", removeByName);
+// http://localhost:3000/product/removeByName
+router.delete("/removeByName", removeByName);
 
+// http://localhost:3000/product/update
 router.post("/update", update)
 
-router.post("/list", list)
+// http://localhost:3000/product/list
+router.get("/list", list)
 
-router.post("/listByCId", listByCId)
+// http://localhost:3000/product/listByCId
+router.get("/listByCId", listByCId)
 
-router.post("/listById", listById)
+// http://localhost:3000/product/listById
+router.get("/listById", listById)
 
 export default router;
