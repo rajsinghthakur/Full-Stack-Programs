@@ -1,11 +1,12 @@
 import Product from "../model/product.model.js"
 
 export const add = (request, response, next) => {
+    let filename = request.file.filename;
     let title = request.body.title;
     let brand = request.body.brand;
     let price = request.body.price;
     let description = request.body.description;
-    let imageUrl = request.body.imageUrl;
+    let imageUrl = "images/" + filename;
     let categoryId = request.body.categoryId;
 
     let product = new Product(null, title, brand, price, description, imageUrl, categoryId);
@@ -24,7 +25,9 @@ export const removeById = (request, response, next) => {
 
     Product.removeById(id)
         .then(result => {
-            return response.status(200).json({ message: "product deleted" });
+            if (result.affectedRows != 0)
+                return response.status(200).json({ message: "product deleted" });
+            return response.status(401).json({ message: "unauthorized request......  data not found" });
         })
         .catch(err => {
             return response.status(500).json({ error: "Internal Server error", Error: err });
@@ -36,7 +39,9 @@ export const removeByName = (request, response, next) => {
 
     Product.removeByName(title)
         .then(result => {
-            return response.status(200).json({ message: "product deleted" });
+            if (result.affectedRows != 0)
+                return response.status(200).json({ message: "product deleted" });
+            return response.status(401).json({ message: "unauthorized request......  data not found" });
         })
         .catch(err => {
             return response.status(500).json({ error: "Internal Server error", Error: err });
@@ -84,11 +89,12 @@ export const listById = (request, response, next) => {
 
 export const update = (request, response, next) => {
     let id = request.body.id;
+    let filename = request.file.filename;
     let title = request.body.title;
     let brand = request.body.brand;
     let price = request.body.price;
     let description = request.body.description;
-    let imageUrl = request.body.imageUrl;
+    let imageUrl = "images/" + filename;
     let categoryId = request.body.categoryId;
 
     let product = new Product(id, title, brand, price, description, imageUrl, categoryId);

@@ -8,11 +8,17 @@ import CartRouter from "./routes/cart.route.js";
 import CartitemsRouter from "./routes/cartitems.route.js";
 import OrderdetailsRouter from "./routes/orderdetails.route.js";
 import OrderitemsRouter from "./routes/orderitems.route.js";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
+const filename = fileURLToPath(import.meta.url);
+const dirname  = path.dirname(filename);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(express.static(path.join(dirname,"public")));
 
 app.use("/admin", AdminRouter);
 

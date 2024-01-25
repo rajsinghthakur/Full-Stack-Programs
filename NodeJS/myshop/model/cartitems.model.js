@@ -7,6 +7,21 @@ export default class CartItems {
         this.ProductId = ProductId;
     }
 
+    static saveCartItem(cartId, productId) {
+        return new Promise((resolve, reject) => {
+            pool.getConnection((err, con) => {
+                if (err) reject(err);
+                else {
+                    let sql = "insert into cartItems(cartId,productId) values(?,?)";
+                    con.query(sql, [cartId, productId], (err, result) => {
+                        con.release();
+                        err ? reject(err) : resolve(result);
+                    })
+                }
+            })
+        });
+    }
+
     add() {
         return new Promise((resolve, reject) => {
             pool.getConnection((err, con) => {

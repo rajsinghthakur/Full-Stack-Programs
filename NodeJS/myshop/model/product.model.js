@@ -66,7 +66,7 @@ export default class Product {
                 if (err) {
                     reject(err);
                 } else {
-                    let sql = "select * from product";
+                    let sql = "select *, category.categoryName from product inner join category on product.categoryId = category.id";
                     con.query(sql, (err, result) => {
                         err ? reject(err) : resolve(result);
                         con.release();

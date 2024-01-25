@@ -32,8 +32,8 @@ class User {
                     reject(err);
 
                 } else {
-                    let sql = "select * from user where username = ? and password =?";
-                    con.query(sql, [this.username, this.password], (err, result) => {
+                    let sql = "select * from user where email = ? and password =?";
+                    con.query(sql, [this.email, this.password], (err, result) => {
                         err ? reject(err) : resolve(result);
                         con.release();
                     });
